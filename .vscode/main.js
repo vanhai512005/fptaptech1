@@ -2,13 +2,21 @@ let id = (id) => document.getElementById(id);
 
 let classes = (classes) => document.getElementsByClassName(classes);
 
-("submit", (e) => {
+let username = id("username"),
+    email = id("emaill"),
+    password = ("password"),
+    form = id("form"),
+    errorMsg = classes("error"),
+    successIcon = classes("success-icon"),
+    failureIcon = classes("failure-icon"),
+
+form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     engine(username, 0, "Username cannot be blank");
-    engine(email, 1, "Email cannpt be blank");
-    engine(password, 2, "Password  cannot be blank");
- });
+    engine(email, 1, "Email cannot be blank");
+    engine(password, 2 ,"Password cannot be blank");
+})  ;  
 let engine = (id, serial, message) => {
     if (id.value.trim() === "") {
         errorMsg[serial].innerHTML = message;
