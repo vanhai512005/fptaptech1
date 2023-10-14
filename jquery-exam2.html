@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Example 01 - Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js" integrity="sha512-eqClqe36bqXg9ABERfLUfLsDuC0J9sgC2ECZmEFsw5snXC7ANYMeOijlBAcRlhctHbvHx9ZERfjBteM6U27qYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></script>
+</head>
+<body>
+    <!-- Viet theo script -->
+    <script>
+        //Template cho DOM
+        $(document).ready(function(){
+            $('#hello').html('Hello world!');
+            $('#hello').addClass('green');
+            $('#p1').addClass('green');
+            $('.red').each;
+        $('#hello').click(function(){
+            $(this).html('Xin Chào!');
+            return false;
+        });    
+        });
+    </script>
+    <style>
+        .red{color: red;}
+        .green{color: green;}
+    </style>
+    <h1 id="hello">hi</h1>
+    <p class="red">Red linr!</p>
+    <p id="p1"> P tag demo</p>
+</body>
+</html>
