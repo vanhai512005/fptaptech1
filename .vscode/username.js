@@ -1,1 +1,0 @@
-let username = id("username"), email = id("email"), password = id("password"), form = id("form"), errorMsg = classes("error"), successIcon = classes("success-icon"), failureIcon = classes("failure-icon"), form, addEventListener;
