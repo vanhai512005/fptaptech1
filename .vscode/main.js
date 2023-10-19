@@ -8,7 +8,7 @@ let username = id("username"),
     form = id("form"),
     errorMsg = classes("error"),
     successIcon = classes("success-icon"),
-    failureIcon = classes("failure-icon"),
+    failureIcon = classes("failure-icon");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
